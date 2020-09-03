@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_12</title>
+</head>
+<body>
+    <script>
+        var frase = prompt("Ingrese la frase");
+        var longitud = frase.length;
+        var vocal;
+        var cont = 0;
+        var cont1 = 0;
+        var cont2 = 0;
+        var cont3 = 0;
+        var cont4= 0;
+        var i;
+
+         for (i = 0; i < longitud; i++) {
+           vocal = frase.charAt(i);   // 
+           if (vocal == "a"){
+            cont++;
+        }if (vocal == "e"){
+            cont1++;
+        }if (vocal == "i"){
+            cont2++;
+        }if (vocal == "o"){
+            cont3++;
+        }
+        if (vocal == "u"){
+            cont4++;
+        }
+
+        
+    }
+    document.write(frase, '<br />')
+
+    document.write("La frase tiene: " +cont + " a ",'<br />');
+    document.write("La frase tiene: " +cont1 + " e ",'<br />');
+    document.write("La frase tiene: " +cont2 + " i ",'<br />');
+    document.write("La frase tiene: " +cont3 + " o ",'<br />');
+    document.write("La frase tiene: " +cont4 + " u ",'<br />');
+ 
+    </script>
+</body>
+</html>

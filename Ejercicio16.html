@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_16</title>
+</head>
+<body>
+    <script>
+        var numero1 = prompt("Ingrese el primer número")
+        var numero2 = prompt("Ingrese el segundo número")
+        var mayor;
+        var i;
+
+        if(numero1 > numero2){
+            mayor= numero1;
+        }else{
+            mayor= numero2;
+        }
+        for(i=0; i <= mayor; i++){
+            if (numero1 % i == 0 && numero2 % i == 0) {
+                document.write(i," , ");
+                }
+        }
+
+      
+    </script>
+</body>
+</html>

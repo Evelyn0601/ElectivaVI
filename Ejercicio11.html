@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_11</title>
+</head>
+<body>
+    <script>
+        var frase = prompt("Ingrese la frase");
+        var longitud = frase.length;
+        var vocal;
+        var cont = 0;
+        var i;
+
+         for (i = 0; i < longitud; i++) {
+           vocal = frase.charAt(i);   // 
+           if (vocal == "a" || vocal == "e" || vocal == "i" || vocal == "o" || vocal == "u") {
+            cont++;
+        }
+    }
+    document.write(frase, '<br />')
+
+    document.write("La frase tiene " +cont + " vocales");
+    </script>
+</body>
+</html>
