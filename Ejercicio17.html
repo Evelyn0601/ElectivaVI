@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio_15</title>
+</head>
+<body>
+    <script>
+        var numero = prompt(" Ingrese un número");
+        var primo =true;
+        var i=2;
+        for(i; i<numero;i++){
+            if(numero%i==0){
+                primo= false;
+            }
+        }
+
+        if( primo==true){
+            document.write("El número "+numero+" Es Primo")
+        }else{
+            document.write("El número "+numero+" NO es Primo")
+        }
+    </script>
+</body>
+</html>
